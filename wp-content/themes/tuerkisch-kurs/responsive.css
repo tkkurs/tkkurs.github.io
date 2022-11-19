@@ -1,0 +1,237 @@
+@media screen and (max-width: 960px) {
+    #tuerkischkurs-kreuzberg{
+        xdisplay: none;
+    }
+    #page-container{
+        background:none;
+        background-color:#fff;
+    }
+    #right-block{
+       width:100%;
+       margin:0 auto;
+       text-align:center;
+    }
+    #right-block{
+       display:none;
+    }
+    #content-wrapper{
+       width:auto;
+       max-width:580px;
+       margin:0 auto;
+       padding:25px 10px;
+    }
+    .table-1{
+       font-size:0.9em;
+    }
+    .red{
+       font-size:0.8em;
+    }
+
+    /* fix footer */
+    #footer-inner{
+        padding-left:16px;
+    }
+    #footer .sitemap li{
+        width:30%;
+    }
+    header{
+        padding-bottom:5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #tuerkischkurs-kreuzberg{
+        display: none;
+    }
+    #right-block{
+       display:none;
+    }
+    article {
+    width: 575px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #left-block{
+       width:auto;
+       padding:0 10px;
+       float:none;
+       display:block;
+       margin:0 auto;
+       text-align:center;
+    }
+    #left-block ul.sub-menu{
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    #left-block ul.sub-menu li{
+        width:auto;
+    }
+    #menu-left ul{
+       padding-top:25px;
+       padding-left:0;
+    }
+    #menu-left ul li{
+        width:100%;
+    }
+    #block2{
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    #menu-left ul li a {
+	    width:100%;
+	    padding:0;
+	    background:none;
+        background-color:#d70022;
+        border-top:1px solid #fff;
+	}
+	#menu-left ul li.current-menu-item > a,
+	#menu-left ul li.current-menu-parent > a {
+	    background: none;
+	    background-color:#ff5d5d;
+	}
+	#menu-left  ul li a:hover{
+        background:none;
+        background-color:#a6021c;
+	}
+    /* submenu */
+    #left-block ul.sub-menu{
+        width:100%;
+        padding:0;
+    }
+    #left-block ul.sub-menu li {
+	    background-color: #C9ADB1;
+	    border-bottom: 1px solid #FFFFFF;
+	    display: inline-block;
+	    height: 24px;
+	    opacity: 0.65;
+            width:100%;
+	}
+        #menu-left ul.sub-menu li a {
+	    background: none;
+	    font-size: 12px;
+	    height: 24px;
+            line-height: 24px;
+            padding: 0;
+	}
+	#menu-left ul.sub-menu li a:hover {
+	    background: none;
+	    background-color:#A6021C;
+	    height: 24px;
+	    opacity: 0.7;
+	}
+	#menu-left li.current-menu-parent ul.sub-menu li.current-menu-item a {
+	    background-color: #FF5D5D;
+	    height: 24px;
+	}
+	/*
+	#menu-left li.current-menu-parent ul.sub-menu li.current-menu-item a:hover{
+	    background-color:#a6021c;
+	}
+	*/
+
+
+    #left-block .sp-main-div,
+    #left-block #logged-in {
+        margin: 10px 0 0 0;
+        width: auto;
+    }
+
+    #left-block #logged-in {
+        width: auto;
+    }
+
+    #left-block .sp-main-div-vertical
+    {
+        text-align: center
+    }
+
+    div.sp-main-div p
+    {
+        max-width: none;
+    }
+
+    #menu-left div.sp-main-div ul
+    {
+        padding-top: 0;
+    }
+
+    #menu-left div.sp-main-div ul li a
+    {
+        border: none;
+        background-color: transparent;
+    }
+    #left-block .sp-main-div form p input[name="user-submit"] {
+        width: auto;
+    }
+    .tablepress {
+    float: left;
+    margin-right: 5px;
+    width: 49%;
+    }
+    #content-wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    }
+    .tabelle-clear {
+    clear: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+	#wrapper{
+	   padding-bottom:30px;
+	}
+	.desktop-only{
+        display:none;
+    }
+    .mobile-only{
+	    display:block;
+	}
+	#footer-inner{
+	   padding-top:16px;
+	   padding-bottom:20px;
+	}
+	#footer .widget{
+	   height:auto;
+	   width:auto;
+	   padding-bottom:16px;
+	   border-right:0px;
+	}
+	header{
+	   padding-bottom:0px;
+	}
+        .tabelle-clear {
+           clear: none;
+        }
+}
+
+@media screen and (max-width: 520px) {
+	/* make contact form inputs responsive */
+	.wpcf7-form input,
+	.wpcf7-form textarea{
+	   width:90%;
+	}
+    /* fix footer */
+    #footer .sitemap li{
+        width:100%;
+    }
+    .tablepress {
+    float: left;
+    margin-right: 5px;
+    width: 100%;
+    }
+   .tabelle-clear {
+    clear: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+}
+

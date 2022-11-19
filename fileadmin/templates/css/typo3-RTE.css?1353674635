@@ -1,0 +1,76 @@
+/* #############################
+** ### classesCharacter ########
+** #############################
+*/
+
+span.align-left {text-align:left;}
+
+span.align-center {text-align:center;}
+
+span.align-right {text-align:right;}
+
+/* #############################
+** ### classesParagraph ########
+** #############################
+*/
+
+p.paragraph-1 {font-weight:bold;}
+
+/* #############################
+** ### classesTable ########
+** #############################
+*/
+
+table.table-1 {
+	border:1px solid #D8D8D8;
+	padding:0px; 
+	margin:0px; 
+	border-spacing:0px; 
+	border-collapse: collapse;
+	}
+
+table.table-1 thead,table.table-1 tbody {
+	border-collapse: collapse;
+	}
+
+table.table-1 td {
+	border:1px solid #D8D8D8; 
+	padding:5px; 
+	margin:0px; 
+	vertical-align:top; 
+	border-spacing:0px;  
+	}
+
+table.table-1 th {
+	border:1px solid #D8D8D8; 
+	padding:0 0 0 5px; 
+	margin:0px; 
+	vertical-align:top; 
+	border-spacing: 0px; 
+	background: #F6F6F6; 
+	color: #333333;
+	}
+
+table.table-2 {width:100%;}
+
+td.cell-1 {padding:10px;}
+td.align-justify { text-align: justify;}
+
+/* #############################
+** ### TagFreeClasses ##########
+** #############################
+*/
+
+.red {
+  color:#CC0000;
+  font-size: 0.9em;
+}
+
+.green {
+  color: #10538E;
+  font-size: 1.1em;
+}
+
+
+
+

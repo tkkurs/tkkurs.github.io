@@ -1,0 +1,1001 @@
+/*
+Theme Name: Türkisch-Kurs.de
+Theme URI: http://türkisch-kurs.de
+Description: WordPress Theme für türkisch-kurs.de
+Author: CONTENT CONTROL BERLIN
+Author URI: http://contentcontrol-berlin.de
+*/
+@charset "UTF-8";
+
+/***************************
+ * Reset
+ ***************************/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, hgroup, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+html, * html body{
+	margin: 0;
+	margin: 0 !important;
+}
+
+blockquote {
+    background-color: #F6F6F6;
+    border-left: 12px solid #65C3D4;
+    font-size: 0.9em;
+    margin:1.5em 1em 1.5em 0;
+    padding: 1em;
+}
+
+/***************************
+ * Base
+ ***************************/
+@font-face {
+    font-family: MyCustomFont;
+    src: url("css/segoeprb.eot") /* EOT file for IE */
+}
+
+@font-face {
+    font-family: MyCustomFont;
+    src: url("css/segoeprb.ttf") /* TTF file for CSS3 browsers */
+}
+
+:focus, :active { outline: 0 }
+
+header, nav, article, aside, footer, hgroup, section { display: block }
+
+img, div, a, input {
+    behavior: url(css/iepngfix.htc);
+}
+
+h1 {
+    letter-spacing:-1px;
+    font-size:2em;
+}
+
+h2 {
+    letter-spacing:-1px;
+    font-size:1.5em;
+}
+
+h3 {
+    font-size:1em;
+    font-weight:bold;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration:none;
+    color: #3F77BB;
+}
+
+a:hover {
+    color: #7BA13B;
+    text-decoration:underline;
+}
+
+body {
+    height: 100%;
+    background-color: #424F5D;
+    text-align: center;
+    font-family:Arial,Verdana,Helvetica,sans-serif;
+    line-height: 1.25em; 
+}
+
+.clear         { clear:both; }
+.float-left    { float:left; }
+.float-right   { float:right; }
+
+.text-left     { text-align:left; }
+.text-right    { text-align:right; }
+.text-center   { text-align:center; }
+.text-justify  { text-align:justify; }
+
+.bold          { font-weight:bold; }
+.italic        { font-style:italic; }
+.underline     { border-bottom:1px solid; }
+.highlight     { background:#ffc; }
+
+.wrap          { width:960px;margin:0 auto; }
+
+.img-left      { float:left;margin:4px 10px 4px 0; }
+.img-right     { float:right;margin:4px 0 4px 10px; }
+
+.nopadding     { padding:0; }
+.noindent      { margin-left:0;padding-left:0; }
+.nobullet      { list-style:none;list-style-image:none; }
+
+.desktop-only{ display:block; }
+.mobile-only{ display:none; }
+
+
+/***************************
+ * Header
+ ***************************/
+header{
+    padding-bottom:20px;
+    background-color: #FFF;
+}
+
+#logo-wrapper {
+    margin: 0px auto;
+    max-width: 940px;
+}
+
+#logo {
+    padding: 10px;
+    float: left;
+}
+#logo img{
+	width:100%;
+}
+
+#tuerkischkurs-kreuzberg {
+    height: 15%;
+    padding-right: 22.0638297872340425%;
+    float: right;
+}
+
+#tuerkischkurs-kreuzberg  img {
+    margin-top: 1.0638297872340425%;
+    position: absolute;
+    }
+
+#header-space {
+    background: url("img/header-space.jpg")  no-repeat #D8DEE6;
+    height: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 940px;
+}
+
+#page-container {
+    background: url("img/content-bg.jpg") repeat-y;
+    max-width: 940px;
+    margin: 0px auto;
+    min-height: 100%;
+    text-align: left;
+}
+
+/***************************
+ * Content
+ ***************************/
+.entry > p {
+    margin-bottom: 1em;
+    font-size: inherit;
+}
+
+
+.entry ol, .entry ul {
+    margin-left: 2.5em;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #D8DEE6;
+    padding-bottom:70px;
+}
+
+article {
+    color: #767676;
+    float: left;
+    width:585px;
+}
+
+aside {
+    width: 169px;
+    height: 100%;
+    vertical-align:top;
+    display:inline-block;
+}
+
+#left-block {
+    background: transparent;
+}
+
+#right-block {
+    background: #FFF;
+    margin: 0px;
+    padding: 30px 0px 15px;
+    font-size: 0.9em;
+}
+
+#left-block h2.title,
+#right-block h2.title{
+    display:none;
+}
+
+#content-wrapper{
+    padding: 16px 0px 30px 15px;
+    color: #767676;
+    font-size: 0.87em;
+}
+
+#block2 h1{
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #D70022;
+    font: 14px/16px Verdana,Geneva,Arial,Helvetica,sans-serif;
+    height: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+#block2 h2 {
+    color: #FF5D5D;
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom:8px;
+}
+
+#block2 h2 span {
+    color: #D70022;
+    margin-left: 30px;
+}
+
+#block2-kreuzkoelln {
+    color: #767676;
+    font-size: 16px;
+    margin: 20px 0px 30px 0px;
+    width: 265px;
+}
+
+#block2  #block2-kreuzkoelln p {
+    padding-left: 30px;
+}
+
+section {
+    padding-left: 30px;
+}
+
+section  h3{
+    margin-left: -20px;
+}
+
+#breadcrumbs{
+    font-size:0.8em;
+    float: left;
+}
+
+.facebook-like {
+    text-align: right;
+}
+
+.liked_bottom {
+   margin-top: 1em;
+}
+
+#mehr {
+    color: #D70022;
+    font-family: MyCustomFont,Verdana,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+#mehr a {
+    color: #D70022;
+    text-decoration: none;
+}
+
+#mehr a:hover {
+    text-decoration: underline;
+}
+
+
+/***************************
+ * Menus
+ ***************************/
+#menu-left {
+    margin: -10px 0px 15px 0px;
+    padding: 0px;
+    font-size: 0.9em;
+}
+
+#menu-left ul ul{
+	display:none;
+}
+
+#menu-left ul .current-page-ancestor ul,
+#menu-left ul .current-menu-item ul{
+    display:block;
+}
+
+#menu-left  ul {
+    padding: 0px 0px 0px 10px;
+}
+
+#menu-left  ul li {
+    width: 154px;
+}
+
+#menu-left ul li a {
+    text-decoration: none;
+    height: 35px;
+    line-height: 35px;
+    background: url("img/nav-bg.png") no-repeat scroll 0 0 transparent;
+    padding: 0px 15px;
+    color: #FFF;
+    display: inline-block;
+}
+
+#menu-left ul li.current-menu-item > a,
+#menu-left ul li.current-menu-parent > a {
+    background: url("img/nav-bg-visited.png") no-repeat scroll 0 0 transparent;
+}
+
+#left-block ul.sub-menu{
+    background-color: transparent;
+    margin: 0;
+    padding: 1px 0 0 15px;
+    width: 120px;
+}
+
+#left-block ul.sub-menu li {
+    background-color: #C9ADB1;
+    display: inline-block;
+    height: 24px;
+    opacity: 0.8;
+    width: auto;
+    margin-bottom: 1px;
+}
+
+#menu-left ul.sub-menu li a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 7px;
+}
+
+#menu-left ul.sub-menu li a:hover {
+    background: none repeat scroll 0 0 #A6021C;
+    height: 24px;
+    line-height: 24px;
+    opacity: 0.8;
+}
+
+#menu-left li.current-menu-parent ul.sub-menu li.current-menu-item a {
+    background-color: #FF5D5D;
+}
+
+#menu-left ul.sub-menu li a:hover {
+    background:none;
+    background-color:#a6021c;
+}
+
+#menu-right ul,
+ul.sitemap {
+    color: #BBBBBB;
+    list-style: square outside none;
+    margin: 5px 0px;
+}
+
+#menu-right ul  li,
+ul.sitemap li{
+    padding-left: 3px;
+    list-style-position: inside;
+}
+
+ul.sitemap li li {
+    margin-left: 1.5em
+}
+
+#right-block ul.menu {
+    padding-left: 1em;
+}
+
+#right-block ul.menu li a {
+    color: #79797C;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#right-block ul.sub-menu {
+    color: #BBBBBB;
+    font-size: 0.9em;
+    list-style: square outside none;
+    margin: 0.4em 0 0.4em 1em;
+}
+
+#right-block ul.sub-menu li{
+    padding-left: 3px;
+}
+
+#right-block ul.sub-menu li a{
+    font-size:100%;
+    font-weight:normal;
+}
+
+/***************************
+ * Password reset form
+ ***************************/
+#pippin_password_form p{
+	margin-bottom:6px;
+}
+
+#pippin_password_form label{
+	width:150px;
+	display:inline-block;
+}
+
+.pippin_message.error{
+	color:red;
+	margin-bottom:12px;
+}
+
+.pippin_message.success{
+    margin-bottom:12px;
+}
+
+/***************************
+ * Teachpress Course View
+ ***************************/
+#course-view {
+    margin-right: 1em;
+    font-size: .9em;
+}
+
+#course-view td.descr{
+	width:auto;
+}
+
+#course-view .content-wrap{
+	overflow:hidden;
+	line-height:20px;
+}
+
+#course-view .row{
+	display:block;
+	padding:6px;
+}
+
+#course-view .row.odd{
+	xbackground-color:#F6F6F6;
+}
+
+
+#course-view .row.even {
+    background-color: #F6F6F6;
+}
+
+#course-view .row .col1{
+    display:inline-block;
+    width:30%;
+    vertical-align:top;
+    color: #4E1454;
+}
+
+#course-view .row .col2{
+    display:inline-block;
+    width:70%;
+}
+
+#block2 .content-wrap > p {
+    padding: 0;
+}
+
+.single-course > form {
+    margin-left: 29%;
+}
+
+#course-view .apply_link {
+    border-bottom: 1px solid #F6F6F6;
+    margin: 6px 0;
+}
+
+#course-view input[type="submit"]{
+	background-color:#fff;
+	border: 1px solid #D8D8D8;
+	border-radius:3px;
+}
+
+#course-view input[type="submit"]:hover{
+    cursor:pointer;
+    background-color:#7BA13B;
+    color:#fff;
+    border-color:#fff;
+}
+
+#course-view h3{
+    cursor:pointer;
+    background: none repeat scroll 0 0 #EDF0F2;
+    border: 1px solid #CCCCCC;
+    border-spacing: 0;
+    color: #4e1454;
+    font-weight: normal;
+    margin-top: 1px;
+    padding: 0 0 0 5px;
+    vertical-align: top;
+}
+
+#course-view h3.ui-state-active{
+	border-bottom-width:0;
+	cursor:auto;
+}
+
+.course-table-header {
+    background-color: #F6F6F6;
+    color: #4E1454;
+}
+
+#course-view .mobile-only input[type="submit"]{
+	margin-left:8px;
+}
+
+#course-view .mobile-only .single-course:not(:first-child){
+	border-top-width:0;
+}
+
+#course-view .mobile-only .single-course{
+	border: 1px solid #CCCCCC;
+	padding-bottom:8px;
+}
+
+#course-view .ui-icon{
+	display:inline-block;
+	vertical-align:top;
+	width:0;
+	height:0;
+}
+
+#course-view .ui-arrow-right{
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #424F5D;
+    float: right;
+    /*background-color: #3F77BB;*/
+    margin-top:3px;
+    margin-left:3px;
+    margin-right:11px;
+}
+
+#course-view .ui-arrow-down{
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #424F5D;
+    float: right;
+    margin-top:6px;
+    margin-right:8px;
+}
+
+#block2 table p{
+	padding:0;
+}
+
+table.table-1 {
+    border: 1px solid #D8D8D8;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+}
+
+table.table-1 thead, table.table-1 tbody {
+    border-collapse: collapse;
+}
+
+table.table-1 td {
+    border: 1px solid #D8D8D8;
+    border-spacing: 0;
+    margin: 0;
+    padding: 4px;
+    vertical-align: top;
+}
+
+table.table-1 th {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #D8D8D8;
+    border-spacing: 0;
+    color: #cc0000;
+    margin: 0;
+    padding: 0 0 0 5px;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+/***************************
+ * Tablepress
+ ***************************/
+.tablepress {
+    float: left;
+    margin-right: 5px;
+    width: 32%;
+    font-size: .9em;
+}
+
+.tabelle-clear {
+    clear: both;
+}
+
+/***************************
+ * Footer
+ ***************************/
+footer {
+    background-color: #424F5D;
+}
+#footer{
+	float:left;
+	width:95%;
+	color:#D8DEE6;
+	margin: 0 2%;
+        font-size: 0.8em;
+}
+#footer a{
+	color:#D8DEE6;
+}
+#footer-inner{
+	padding-top:30px;
+	padding-bottom:45px;
+	text-align:left;
+	max-width:940px;
+	margin:0 auto;
+}
+#footer h2.title{
+	text-align:left;
+	margin-bottom:4px;
+}
+#footer .widget{
+	display:inline-block;
+	vertical-align:top;
+	margin-right:16px;
+	padding-bottom:20px;
+	width:200px;
+	height:190px;
+	border-right:1px dotted #D8DEE6;
+}
+#footer li{
+	width:auto;
+	float:left;
+	clear:both;
+	padding-left:0px;
+	text-align:left;
+	list-style:none;
+	margin-right:16px;
+	margin-bottom:3px;
+}
+#footer li a{
+	color:#D8DEE6;
+	font-size:1em;
+}
+#footer ul.sub-menu li{
+	font-size:12px;
+	padding-left:10px;
+}
+#footer .sitemap li a {
+    color: #D8DEE6;
+    font-size: 0.9em;
+	text-decoration:none;
+}
+#footer .sub-menu li{
+	float:left;
+	clear:both;
+	margin-right:0;
+}
+
+/***************************
+ * reset wp style
+ ***************************/
+html { margin-top: 0px !important; }
+* html body { margin-top: 0px !important; }
+
+#left-block ol, #right-block ol, #left-block ul, #right-block ul {
+    list-style: none outside none;
+}
+
+.red{
+	color:#FF5D5D;
+	font-size:0.9em;
+}
+.bottom-buffer{
+	margin-bottom:24px;
+}
+.bottom-buffer-small{
+	margin-bottom:16px;
+}
+
+#searchform{
+    padding-left:12px;
+    padding-bottom:16px;
+}
+#s{
+    width:120px;
+}
+
+#left-block .sp-main-div-vertical
+{
+    min-height: 0;
+    max-width: none;
+    height: auto;
+}
+
+#left-block .sp-main-div, 
+#left-block #logged-in {
+    background-color: #9EA9B6;
+    margin: 10px 0 0 10px;
+    padding: 0.7em 0;
+    text-decoration: none;
+    width: 140px;
+}
+
+#left-block #login_error {
+    padding: 0 0.95em;
+    font-size: 11px;
+}
+
+#left-block #logged-in {
+    padding: 1em;
+    width: 120px;
+}
+
+#logged-in p {
+    margin-bottom: 10px;
+}
+
+#left-block #logged-in a {
+    background-color: #F6F6F6;
+    border: 1px solid #999999;
+    font-size: 0.9em;
+    padding: 3px;
+}
+
+#left-block .sp-main-div form {
+    color: #252525;
+    font-size: 12px;
+    border: 0 solid #CCCCCC;
+    padding: 0 2px;
+}
+
+#left-block .sp-main-div .sp-flipping-link {
+    background-image: none;
+    font-size: 11px;
+    height: 20px;
+    padding: 0 4px;
+}
+
+#left-block .sp-main-div h2.title {
+    font-size: 16px;
+    display: block;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px 0 0 18px;
+}
+
+#left-block .sp-main-div form p {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#left-block .sp-main-div label {
+    color: #767676;
+    font-size: 0.9em;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+#user_pass-2, #user_login-2, #lost_user_login-2 {
+    margin-top: 2px;
+    width: 112px;
+}
+
+#left-block .sp-main-div form p.login-remember {
+	display: none;
+}
+
+#rememberme1 {
+    margin: 5px 0;
+}
+
+.sp-widget-login-div ul li:first-child {
+    display: none;
+}
+
+#left-block .sp-main-div form p.login-submit {
+    border: medium none;
+    margin: 10px;
+}
+
+#left-block .sp-main-div form p.login-submit input {
+    background: url("img/button_inaktiv.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    border: medium none;
+    padding: 3px 8px;
+}
+
+#left-block .sp-main-div form p.login-submit input:hover {
+    background: url("img/button_aktiv.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    border: medium none;
+    padding: 3px 8px;
+}
+
+#logged-in p:first-child {
+    color: #767676;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sp-widget-lost_pass-div input[name="user-submit"] {
+    font-size: 0.8em;
+    margin-top: 5px;
+    padding: 0;
+}
+body.login .sp-main-div{
+	display:none;
+}
+.sp-message {
+    color: #21759B;
+    font-size: 0.85em;
+    margin: 3px;
+    padding: 0 8px;
+}
+/***************************
+ * Comment und Commentform
+ ***************************/
+.comment {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D8D8D8;
+    margin: 10px 0;
+    padding: 3px 8px;
+    list-style: none outside none;
+}
+
+.commentmetadata {
+    color: #21759B;
+    float: left;
+    margin-top: 17px;
+    width: auto;
+}
+
+.comment-body {
+    padding: 0 5px;
+}
+
+.comment-body > p {
+    font-size: 0.9em;
+    clear: both;
+    padding: 5px 0;
+}
+
+#kommentar_formular h3 {
+    margin: 0.5em 0;
+}
+
+
+#commentform p {
+    padding-bottom: 5px;
+}
+
+.comment-author {
+    float: left;
+    margin-right: 10px;
+    width: auto;
+}
+
+.vcard cite {
+    font-weight: bold;
+}
+
+/***************************
+ * Image floating
+ ***************************/
+.alignleft {
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+.alignright {
+    float: right;
+    margin: 5px 0 5px 5px;
+}
+
+/***************************
+ * Pagination
+ ***************************/
+.pagination{
+    margin-top:16px;
+    text-align: right;
+}
+.pagination .page-numbers{
+    border:1px solid #bfbfbf;
+    padding:6px;
+    color: #21759B;
+}
+.pagination .page-numbers.current{
+    border:1px solid #000;
+    color:#000;
+    font-weight:bold;
+}
+.pagination .page-numbers.dots{
+    color:#000;
+}
+
+/***************************
+ * Metaslider
+ ***************************/
+
+.metaslider {
+    margin: 15px 0 15px 3px;
+    xwidth: 106.5%;
+}
+
+.metaslider .caption,
+.metaslider .cs-title,
+.metaslider .nivo-caption {
+    right: auto;
+    bottom: 0px;
+    width: 50%;
+    height: 100%;
+    left: 0px;
+}
+
+.metaslider-custom .theme-light.slider-wrapper {
+    background-color: #F6F6F6;
+}
+
+.nivoSlider .nivo-caption {
+    color: #F6F6F6;
+    opacity: 0.5;
+    padding: 10px 15px;
+}
+
+/* register */
+#login #registerform{
+	margin-bottom:16px;
+}
+#login #backtoblog,
+#login h1{
+	display:none;
+}
+#login input{
+	width:40%;
+}
+#login p.register{
+	font-weight:bold;
+	margin-bottom:8px;
+}
+#login p{
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+/* login */
+#login #login_error{
+	color:red;
+	padding-left:15px;
+	margin-bottom:8px;
+}
+#login #loginform{
+    margin-bottom:16px;
+}
+#login .forgetmenot{
+	margin-bottom:16px;
+}
+#login #rememberme{
+    width:auto;
+}
+#login #nav{
+	display:none;
+}
+#login #reg_passmail{
+	display:none;
+}
+#login p.submit{
+	margin-top:0;
+	clear: both;
+}
+
+/* lost password */
+#lostpasswordform #wp-submit{
+	margin-top:8px;
+	margin-bottom:16px;
+}
+
+/***************************
+ * Teachpress
+ ***************************/
+#tpcourselist {
+	display: none;
+}

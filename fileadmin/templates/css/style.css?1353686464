@@ -1,0 +1,452 @@
+/* CSS Document */
+html { height:100.01%; margin-bottom: 1px; }
+
+body{   
+	padding:0; 
+	margin:0; 
+	background:url(../images/tuerkisch-kurs.png) 100px 20px no-repeat #FFFFFF; 
+	color:#333333; 
+	font:14px/16px Verdana,Geneva,Arial,Helvetica,sans-serif; 
+	text-align:center;	
+	}
+
+p, ul, form, input, h2, h3, h4, img{
+	padding:0px; 
+	margin:0px;
+	}
+div>p {margin-bottom: 15px;}	
+
+blockquote {
+         border-top: 1px dashed #CCCCCC;	
+         border-bottom: 1px dashed #CCCCCC;
+         padding: 5px 20px;
+         margin-bottom: 20px;
+}
+
+blockquote a{
+	color:#315A7A;
+	font-size:1em;
+	text-decoration:none;
+}
+blockquote a:hover{
+	color:#CC0000;
+	text-decoration: underline;
+}
+h1.csc-firstHeader {
+	margin-bottom: 20px;
+	height:20px; 
+	background:#fff; 
+	color:#CC0000; 
+	font:14px/16px Verdana,Geneva,Arial,Helvetica,sans-serif; 
+	}
+.csc-textpic-text h1{
+	margin-bottom: 20px;
+	height:20px; 
+	background:#fff; 
+	color:#CC0000; 
+	font:14px/16px Verdana,Geneva,Arial,Helvetica,sans-serif; 	
+	}	
+#bodyPan h2{
+	margin-bottom: 20px;
+	height:20px; 
+	background:#fff; 
+	color:#10538E; 
+	font:14px/16px Verdana,Geneva,Arial,Helvetica,sans-serif; 
+         font-weight:700;
+         padding:0;
+	}
+	
+#bodyPan h3 {
+         font:13px/20px Verdana,Geneva,Arial,Helvetica,sans-serif; 
+	color: #CC0000;
+	}
+	
+#bodyPan h4 {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	color: #CC0000;
+	}
+#bodyPan h5 {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	color: #316AC5;
+	}	
+	
+#mainFrame {
+         width: 100%;
+ 	border-top: 3px solid #cc0000; 	
+ 	text-align:center;
+	}
+	
+
+ul{
+	list-style-type:none;
+	}
+
+/*----MAIN PANEL----*/
+#mainPan{
+	width:780px; 
+	margin:0 0 0 170px; 
+	font-size: 0.85em; 
+	color: #333333; 
+	letter-spacing:0.01em;
+	line-height:19px;
+	text-align:left;
+	}
+
+	
+/*----KLICKPFAD----*/
+#bodyPan span.klickpfad  { 
+	font:.95em/14px Arial, Helvetica, sans-serif;
+	} 
+#bodyPan span.klickpfad a { 
+	font:.95em/14px Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color:#666;
+	}
+
+/*----Left Panel----*/
+#leftPan{
+	width:127px; 
+	float:right; 
+	background:#ffffff; 
+	color:#333333; 
+	border-bottom:1px solid #cccccc; 
+	border-left:1px solid #cccccc;  
+	border-right:1px solid #cccccc; 
+	padding:48px 14px 10px 14px;
+	}
+	
+* html #leftPan {
+         width: 157px;    /* fuer IE 5 und 5.5 */
+         wid\th: 127px;   /* fuer IE 6 */
+}	
+
+#leftPan ul.one{
+	width:127px; 
+	height:100%; 
+	margin:0 0 22px 0;
+	padding: 0;
+	}
+	
+#leftPan ul.one li{
+	height:100%; 
+	border-bottom:1px solid #FFFFFF;
+	}
+			
+#leftPan ul.one li a{ 
+	display:block; 
+	background:url(../images/arrow1.gif) 10px 8px no-repeat #FFFFFF; 
+	color:#333333; 
+	font:12px/22px Arial,Helvetica,sans-serif;  
+	text-decoration:none; 
+	padding:0 0 0 20px;
+	}
+		
+#leftPan ul.one li a:hover{
+	background:url(../images/arrow2.gif) 10px 8px no-repeat #CC0000; 
+	color:#fff; 
+	text-decoration:none; 
+	padding:0 0 0 20px;
+	}
+#leftPan ul.one li.home{ 
+	height:100%; 
+	background:url(../images/arrow2.gif) 10px 8px no-repeat #CC0000; 
+	color:#fff; 
+	text-decoration:none; 
+	font:12px/22px Arial,Helvetica,sans-serif; 
+	padding:0 0 0 20px;
+	}
+	
+#leftPan ul.one li.contact{
+         width:127px; 
+         height:21px; 
+         border-bottom:none;
+         }
+         
+#leftPan ul.sub {    
+	margin-left:-30px;
+	} 
+         
+#leftPan ul.sub li a{  
+	display:block; 
+	background:url(../images/arrow1.gif) 30px 8px no-repeat #FFFFFF; 
+	color:#333333; 
+	font:0.95em/22px Arial,Helvetica,sans-serif;  
+	text-decoration:none; 
+	padding:0 0 0 40px;
+	}         
+
+#leftPan ul.sub li a:hover{ 
+	background:url(../images/arrow3.gif) 30px 8px no-repeat #FFFFFF; 
+	font:0.95em/22px Arial,Helvetica,sans-serif; 
+	color:#333333;  
+	text-decoration:underline; 
+	padding:0 0 0 40px;
+	} 
+	
+#leftPan ul.sub li.home{ 
+	font:0.95em/22px Arial,Helvetica,sans-serif; 
+	background:url(../images/arrow3.gif) 30px 8px no-repeat #FFFFFF; 
+	color:#CC0000; 
+	text-decoration:none; 
+	padding:0 0 0 40px;
+	}	
+	
+
+/*----/Left Panel----*/
+
+/*----Right Panel----*/
+#rightPan{
+	width:621px; 
+	float:left;
+         padding-bottom: 30px;
+	}
+/*---Top Panel----*/
+#topPan{
+	width:620px; 
+	height:110px; 
+	padding: 0px; 
+         position: relative;
+	}
+	
+#topPan img.logo{ 
+	margin:41px 0 5px;
+	}
+#topPan p{
+	width:210px; 
+	height:18px; 
+	background:#fff; 
+	color:#333333; 
+	text-align:left; 
+	font-size:14px;
+	}
+
+#topPan ul{	
+	width:125px; 
+	position:absolute; 
+	top:10px; 
+	right:20px;
+	}
+#topPan ul li{
+	border-right:0px solid #E3DDCD; 
+	float:left;
+	}
+#topPan ul li.startseite {
+	width:41px; 
+	height:32px; 
+	background:url(../images/startseite.gif) 0 0 no-repeat;
+	}
+#topPan ul li.startseite a{
+	width:41px; 
+	height:32px; 
+	display:block; 
+	background:url(../images/startseite.gif) 0 0 no-repeat; 
+	text-indent:-20000px;
+	}
+#topPan ul li.startseite a:hover{
+	width:41px; 
+	height:32px; 
+	background:url(../images/startseite-hover.gif) 0 0 no-repeat; 
+	text-indent:-20000px;
+	}
+#topPan ul li.kontakt {
+	width:41px; 
+	height:32px; 
+	background:url(../images/kontakt.gif) 0 0 no-repeat;
+	}
+#topPan ul li.kontakt a{
+	width:41px; 
+	height:32px; 
+	display:block; 
+	background:url(../images/kontakt.gif) 0 0 no-repeat; 
+	text-indent:-20000px;
+	}
+#topPan ul li.kontakt a:hover{
+	width:41px; 
+	height:32px; 
+	background:url(../images/kontakt-hover.gif) 0 0 no-repeat; 
+	text-indent:-20000px;
+	}
+#topPan ul li.sitemap {
+	width:41px; 
+	height:32px; 
+	background:url(../images/sitemap.gif) 0 0 no-repeat; 
+	border:none;
+	}
+#topPan ul li.sitemap a{
+	width:41px; 
+	height:32px; 
+	display:block; 
+	background:url(../images/sitemap.gif) 0 0 no-repeat; 
+	text-indent:-20000px;
+	}
+#topPan ul li.sitemap a:hover{
+	width:41px; 
+	height:32px; 
+	background:url(../images/sitemap-hover.gif) 0 0 no-repeat; 
+	text-indent:-20000px;
+	}
+
+/*---/Top Panel----*/
+/*---Body Panel----*/
+#bodyPan{
+	width:600px; 
+	padding: 20px 20px 0px 0px;
+	margin-bottom: 30px;
+	min-height: 520px;
+	height: auto !important;	
+	}
+
+* html #bodyPan {
+         width: 620px;    /* fuer IE 5 und 5.5 */
+         wid\th: 600px;   /* fuer IE 6 */ 
+}
+
+
+#bodyPan ul { 
+	list-style-type:none ; 
+	}
+	
+#bodyPan p.content1{padding:12px 0 0 0px;}
+#bodyPan p.content2{padding:12px 0 0 0px;}
+#bodyPan p.content3{padding:12px 0 0 0px;}
+
+
+/*----FOOTER PANEL----*/
+#footermainPan{
+	color:#FFFFFF; 
+	clear:both; 
+	padding:0px;
+	text-align:left;
+	width: 100%;
+	border-top: 2px solid #cc0000;
+	background-color: #8B8989;
+	}
+
+#footerPan{
+	width:780px; 
+	margin:0 0 0 170px;
+	padding-bottom:30px;
+	position:relative;  
+	font-family:Arial, Helvetica, sans-serif;
+	border: 0; 
+	color: #FFFFFF;
+	font-size: 12px;
+	}
+
+#footerPan li{
+	float:left; 
+	}
+#footerPan a{
+	padding:0 1px 0; 
+	color:#FFFFFF; 
+	text-decoration:none; 
+	font-size:12px;
+	}
+#footerPan a:hover{
+	text-decoration:underline;
+	}
+
+#footerPan .copyright{ 
+	margin:0 200px 0 0;
+	color:#fff;  
+	font-size:11px;
+	background-color: #8B8989;
+	}
+#footerPan .aendDatum{
+	color:#fff;  
+	font-size:11px;
+	background-color: #8B8989;
+	font-style: italic;
+	}	
+
+a.internal-link {
+         color: #315A7A;   
+        	text-decoration:underline; 	
+        	font-weight: bold;
+
+}
+
+a.internal-link:hover {
+         color: #CC0000;   
+        	text-decoration:underline; 	
+
+}
+
+/************* flseositemap *************/
+div.tx-flseositemap-pi1 {
+        padding-left: 40px;
+}
+
+div.tx-flseositemap-pi1  ul ul{
+        padding-left: 20px;
+}
+
+
+#bodyPan .tx-flseositemap-pi1 ul {
+	list-style-type: disc;
+}
+
+/************* felogin *************/
+input { 
+        border:1px solid #CCCCCC;
+        }
+fieldset { 
+        border:1px solid #CCCCCC;
+        }
+textarea { 
+        border:1px solid #CCCCCC;
+        }
+.LoginName { 
+        font-size: .85em;
+        color: #CC0000;
+        padding-left: 3px;
+        }
+#leftPan form { 
+        font-size: .85em;
+        }
+#leftPan fieldset { 
+        padding: 0 5px;
+        }
+.login_input input { 
+        width: 110px;
+        border:1px solid #CCCCCC;
+        }
+.login_button input{
+        font-size: 1.05em;
+        margin: 5px 0;
+        }
+#leftPan p { 
+        padding-left: 3px;
+        margin-bottom: 0px;
+        }
+#leftPan p a { 
+        font-size: .85em;
+        color: #315A7A;
+        }
+#leftPan p a:hover { 
+        color: #CC0000;
+        }        
+#leftPan h3 { 
+        font-size: .85em;
+        color: #CC0000;
+        }
+#leftPan .error { 
+        font-size: .85em;
+        color: #CC0000;
+        }           
+        
+/*************fe_user_register**********/
+legend {
+        color: #000;
+}
+#tx-srfeuserregister-pi1-fe_users_form {
+        font-size: .90em;
+}
+
+.tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-error {
+        font-size:0.8em;
+}
+
+.align-center {
+
+	}
